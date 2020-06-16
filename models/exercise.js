@@ -37,5 +37,20 @@ const workoutSchema = new Schema({
             }
         }
     ]
+},
+    {
+        toJSON: {
+            virtuals: true
+        }
+    }
+)
 
+workoutSchema.virtual("totalDuration").get(function () {
+    return this.exercise.reduce((total, exercise) => {
+        return total + exercise.duration
+    }, 0)
 })
+
+const Workout = mongoose.model("Workout", workoutSchema);
+
+module.exports = Workout;
