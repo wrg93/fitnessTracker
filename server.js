@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workoutdb";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://<dbuser>:<dbpassword>@ds349587.mlab.com:49587/heroku_k3n5gz6v";
 
 const options = {
     useNewUrlParser: true,
