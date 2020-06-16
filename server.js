@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.use(require("./routes/api-routes.js"));
-app.use(require("./routes/html-routes/js"));
+app.use(require("./routes/html-routes.js"));
 
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workoutdb";
 
@@ -27,5 +27,5 @@ const options = {
 mongoose.connect(MONGODB_URI, options);
 
 app.listen(PORT, () => {
-    console.log("App running on port http://localhost:${PORT}");
+    console.log(`App running on port http://localhost:${PORT}`);
 });
