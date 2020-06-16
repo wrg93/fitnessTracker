@@ -1,7 +1,7 @@
 # fitnessTracker
 
 # myproject
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)https://stormy-beyond-96413.herokuapp.com/ https://github.com/wrg93/fitnessTracker
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)deployed: https://stormy-beyond-96413.herokuapp.com/ repo: https://github.com/wrg93/fitnessTracker
 
 fitnessTracker
     
